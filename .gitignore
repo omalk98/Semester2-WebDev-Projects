@@ -5,6 +5,6 @@ test_folder
 a3_template/media/**
 !a3_template/media/missing_files.txt
 a4_template/flags/**
-!a4_template/media/missing_files.txt
+!a4_template/flags/missing_files.txt
 a5/resources/**
 !a5/resources/missing_files.txt

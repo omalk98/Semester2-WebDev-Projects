@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Omar Hussein Final Test</title>
+        <meta charset="utf-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/final.css" rel="stylesheet">
+        <script defer src="./js/final.js"></script>
+    </head>
+
+    <body> 
+        <h2>Decleration:</h2>
+        <p>
+            I declare that this test is my own work in accordance with Seneca Academic Policy.
+             No part of this work has been copied manually or electronically from any other source
+            (including 3rd party websites) or distributed to other students. I acknowledge
+            that by begining this test, I will abide by the above.<br><br>
+            <b>Name:</b> (<u>Omar Hussein</u>) &nbsp;&nbsp;&nbsp; <b>Student Number:</b> (<u>118073204</u>)
+        </p>
+        <hr>
+
+        <h2>Course Information</h2>
+        <form id="register" name="register" action="https://httpbin.org/post" method="POST">
+        <input id="crs_code" name="c_code" type="text" placeholder="Enter a course code">
+        <button id="search_crs" name="c_code" type="button"> Search by Course Code </button>
+        <button id="clear_search" name="c_code" type="button"> Clear Search Result </button>
+        <div id="generate_table"></div><br>
+        <fieldset>
+            <legend>Course Registration</legend>
+        <table id="form_body">
+                <tr>
+                    <td>
+                        <label for="program">Program:</label>
+                    </td>
+                    <td>
+                        <input id="program" name="program" type="text" value="BSD" disabled>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sname"><span class="req">*</span>Student Name:</label>
+                    </td>
+                    <td>
+                        <input id="sname" name="sname" type="text" required
+                            placeholder="Enter name including only Alphabet, apostrophe, and space">
+                            <br><span id="sname_err" class="error"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="snum"><span class="req">*</span>Student Number:</label>
+                    </td>
+                    <td>
+                        <input id="snum" name="snum" type="text" required>
+                        <br><span id="snum_err" class="error"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Semester:</label>
+                    </td>
+                    <td id="radio_td">
+                        <input id="winter" name="semester" type="radio" value="Winter">
+                        <label for="winter"> Winter </label>
+                        <input id="summer" name="semester" type="radio" value="Summer">
+                        <label for="summer"> Summer </label>
+                        <input id="fall" name="semester" type="radio" value="Fall">
+                        <label for="fall"> Fall </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="courses"> Courses: </label>
+                    </td>
+                    <td>
+                        <select name="courses" id="courses" size="3" multiple>
+                            <option value="BTP100">BTP100</option>
+                            <option value="BTI225" selected>BTI225</option>
+                            <option value="BTI325">BTI325</option>
+                            <option value="BTI425">BTI425</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="note"> Note: </label>
+                    </td>
+                    <td>
+                        <textarea id="note" name="note"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="form_button" colspan="2">
+                        <button name="register" type="submit"> Register </button>
+                        <button name="register" type="reset"> Reset </button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        </form>
+        <span id="time"></span>
+    </body>
+</html>

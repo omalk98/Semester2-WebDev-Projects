@@ -1,0 +1,128 @@
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size: 12pt;
+    background: #fff;
+    color: #000;
+}
+#page_body h1,
+#form_body h1,
+#prod_body h1 {
+    font-size: 33pt;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-decoration: underline wavy;
+}
+body header {
+    border: #000 solid 3px;
+    border-style: groove;
+    border-radius: 20%;
+    height: 2.7em;
+    text-align: center;
+    font-size: 35pt;
+    font-weight: bold;
+    text-decoration: underline;
+    background: url(../resources/download.jfif);
+    margin: -1em -1em 0 -1em;
+    padding-top: 1em;
+    text-shadow: 0px 0px 4px #000;
+    color: orange;
+    box-shadow: 0px 5px 8px #000;
+}
+
+#page_body,
+#form_body,
+#prod_body {
+    min-height: 70vh;
+    margin: 0.5em 0 0 10em;
+}
+
+nav {
+    margin: 3px 0 0 -0.5em;
+    float: left;
+    width: 10em;
+    position: absolute;
+    height: 80%;
+    border: #000 solid 2px;
+    background: grey;
+    text-shadow: 0px 1px 2px #eee;
+    box-shadow: 2px 0 10px #000;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0 0 0 -2.5em;
+}
+nav ul li {
+    display: block;
+    padding: 1em 0 1em 0;
+    border-bottom: #000 solid 2px;
+    position: relative;
+    margin: 0px;
+}
+nav ul li a {
+    display: block;
+    padding-left: 1.5em;
+    font-size: 15pt;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    background-color: grey;
+    margin: 0px;
+}
+nav ul li ul {
+    width: 200px;
+    position: absolute;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+    margin: 0px;
+}
+nav ul li ul li{
+    border: #000 solid 1px;
+    background-color: grey;
+    font-size: 10pt;
+    color: #000;
+}
+nav ul li:hover, 
+nav ul li:hover a {
+    font-size: larger;
+    color: darkred;
+    background-color: silver;
+} 
+nav ul li:hover ul li a {
+    background-color: grey;
+}
+nav ul li:hover ul {
+    display: block;
+    margin-left: 160px;
+    margin-top: -45px;
+    padding-left: 0px;
+    opacity: 1;
+    visibility: visible;
+} 
+nav ul li ul li:hover,
+nav ul li ul li:hover a {
+    background-color: silver;
+    font-size: initial;
+}
+
+footer {
+    height: 2em;
+    width: 100%;
+    background: url(../resources/16\ unique\ pattern\ \(www.cute-pictures.blogspot.com\).jpg);
+    background-size: 6em;
+    border: #000 solid 1px;    
+    padding: 1em 0 4px 9em;
+    position: absolute;
+    margin: 5em 0 0 -1em;
+}
+footer span {
+    text-align: left;
+    text-decoration: overline solid;
+    font-size: 100%;
+    background-color: #000;
+    color: #eee;
+    text-shadow: 0px 1px 3px #eee;
+}

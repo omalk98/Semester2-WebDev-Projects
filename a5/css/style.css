@@ -1,0 +1,237 @@
+#page_body h2{
+    text-align: center;
+
+}
+#form_body table {
+    border-radius: 2%;
+    font-size: 15pt;
+    border: #000 groove 4px;
+    box-shadow: 0px 3px 10px #000;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    width: auto;
+    background-color: salmon;
+}
+#form_body th {
+    text-align: center;
+    font-size: 20pt;
+}
+
+#form_body td {
+    text-align: right;
+    text-shadow: 0px 1px 2px #eee;
+    vertical-align: middle;
+    padding: 3px 5px 3px 5px;
+}
+#form_body button {
+    background-color: darkgray;
+    width: 150px;
+    height: 35px;
+    box-shadow: 0 1px 3px #000;
+}
+#form_body #submit {
+    background-color: skyblue;
+}
+.radio{
+    font-size: 11pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text {
+    width: 300px;
+    height: 20px;
+    border-radius: 2%;
+    box-shadow: 0px 1px 3px #000;
+}
+textarea {
+    height: 100px;
+    width: 500px;
+    resize: none;
+    background: wheat;
+    border: #000 solid 1px;
+    border-radius: 2%;
+    box-shadow: 0px 1px 3px #000;
+}
+.review {
+    display: block;
+    margin-top: 3em;
+    text-align: center;
+    max-width: 500px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.review label {
+    display: block;
+}
+.review #label {
+    background-color: #eee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#intro {
+    border: grey groove 5px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15pt;
+    margin: 0 4em 0 4em;
+    background-color: lightskyblue;
+    padding: 5px;
+    box-shadow: 0 2px 7px #000;
+}
+#info_sec {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    width: auto;
+    padding-left: 15em;
+    position: relative;
+}
+#info_sec a:visited,
+#info_sec a:link{
+    text-decoration: none;
+    color: #000;
+}
+.info {
+    text-align: center;
+    display: inline-block;
+    width: 300px;
+    height: auto;
+    border: #000 ridge 4px;
+    border-radius: 50%;
+    background-color: gold;
+    padding: 20px;
+    box-shadow: 5px 5px 15px #000;
+    position: relative;
+    margin: 2em;
+}
+.info:hover{
+    transform: scale(1.1);
+}
+#images{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    width: auto;
+    padding-left: 15em ;
+}
+#images img{
+    display: inline-block;
+    height: 9.5em;
+    padding-right: 4em;
+    padding-left: 7em;
+}
+
+#add {
+    font-size: 10pt;
+    text-align: center;
+    border: #000 solid 2px;
+    max-width: 500px;
+    width: auto;
+    height: auto;
+    margin: 10em auto 0 auto;
+    background: crimson;
+}
+
+.honesty {
+    margin: 2em auto 0 auto;
+    text-align: center;
+    border: #000 solid 2px;
+    background: lightskyblue;
+    max-width: 800px;
+    width: auto;
+    box-shadow: 0px 2px 5px #000;
+}
+#page_body #prod_head{
+    font-size: 15pt;
+    background-color: skyblue;
+    border: solid 4px #000;
+    border-radius: 5%;
+    border-top: hidden;
+}
+
+.error {
+    display: block;
+    font-size: 11pt;
+    color: white;
+    border-radius: 3%;
+    text-align: center;
+    margin: 0 2em 0 2em;
+    box-shadow: 0 2px 3px #000;
+}
+
+#buttons {
+    display: block;
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.button_prod {
+    display: inline-block;
+    border: #000 solid 3px;
+    padding: 8px;
+    border-radius: 50%;
+    margin-left: 5em;
+    background-color: teal;
+    box-shadow: #000 0px 3px 6px;
+    height: 4em;
+    width: 4em;
+    padding-top: 2em;
+    text-align: center;
+    color: black;
+}
+.button_prod:hover {
+    background-color: rgb(0, 77, 77);
+    box-shadow: yellow 0 0 8px;
+    color: white;
+}
+#prod_body table td{
+    padding: 10px;
+}
+#prod_body table td img{
+    width: 300px;
+    height: 200px;
+    border: solid 1px #000;
+    box-shadow: 0px 2px 8px;
+    border-radius: 25%;
+    padding: 3px;
+}
+#prod_body table td img:hover {
+    transform: scale(1.1);
+}
+#prod_body table {
+    width: auto;
+    max-width: 650px;
+    margin: 5em auto 0 auto;
+    text-align: center;
+    border: solid 4px #000;
+    box-shadow: #000 0 3px 10px;
+    border-radius: 8%;
+    padding: 35px 35px 60px 35px;
+    background-color: beige;
+}
+#prod_body table ul {
+    text-align: left;
+    list-style-type: upper-roman;
+    text-shadow: 0px 1px 3px #eee;
+}
+#prod_body table .tag {
+    border: solid 1px #000;
+    margin: 10px 50px 0 50px;
+    box-shadow: 0 2px 5px #000;
+    background-color: rgb(243, 187, 82);
+}
+#prod_body table th{
+    border: solid 2px #000;
+    background-color: lightgray;
+    box-shadow: 0 2px 7px #000;
+    border-radius: 4%;
+    font-size: 20pt;
+    padding: 5px 0 5px 0;
+}
+#prod_body #page_swap {
+    float: right;
+    margin-right: 100px;
+}

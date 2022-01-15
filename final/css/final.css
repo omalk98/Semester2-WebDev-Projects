@@ -1,0 +1,54 @@
+body {
+    width: 70%;
+    margin: auto;
+    background-color: rgb(252, 252, 249);
+    padding: 1em 2em 1em 2em;
+}
+fieldset {
+    background-color: bisque;
+    color: blue;
+}
+textarea {
+    min-width: 30ch;
+    min-height: 2ch;
+}
+.error {
+    background-color: red;
+    width: 35ch;
+    text-align: center;
+    color: white;
+    font-size: 10pt;
+    text-shadow: 0 0 1px #000;
+}
+.req {
+    color: red;
+}
+#form_body {
+    padding: 0 0.5em 0 0.5em;
+}
+#form_body td:first-child {
+    width: 5em;
+    text-align: right;
+}
+#form_body td {
+    margin: auto;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    padding: 5px;
+    padding-top: 8px;
+    vertical-align: bottom;
+}
+#program {
+    background-color: white;
+    border: solid rgb(40,40,40) 0.7px;
+}
+#sname {
+    width: 50ch;
+}
+#form_button {
+    min-width: 130px;
+}
+#time {
+    background-color: yellow;
+}

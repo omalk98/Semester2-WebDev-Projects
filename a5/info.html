@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Omar Hussein's Webpage!</title>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/normalize.css" rel="stylesheet">
+    <script defer src="./js/validate.js"></script>
+    <script defer src="./js/review_valid.js"></script>
+
+</head>
+
+<body>
+    <header>
+        CompuFlex
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./products.html">Products</a>
+                <ul>
+                    <li><a href="./digital_prod.html">Digital Products</a></li>
+                    <li><a href="./hardware_prod.html">Hardware Products</a></li>
+                </ul>
+            </li>
+            <li><a href="./info.html">Info</a></li>
+            <li><a href="./honesty.html">Honesty</a></li>
+        </ul>
+    </nav>
+
+    <section id="form_body">
+        <h1>Page Signup</h1>
+        <form id="signup" method="post" action="https://httpbin.org/post">
+            <div id="hidden">
+                <input type="hidden" name="lastName" id="lastName" value="Hussein">
+                <input type="hidden" name="studentId" id="studentId" value="118073204">
+    
+            </div>
+            <table>
+                <tr>
+                    <th colspan="2">
+                        Join The Comunity! <br> Signup Now!
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <label>First Name:</label>
+                    </td>
+                    <td>
+                        <input class="text" id="fname" name="first_name" type="text" required
+                        placeholder="Letters Only">
+                        <span class="error" id="err_fname"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Last Name:</label>
+                    </td>
+                    <td>
+                        <input class="text" id="lname" name="last_name" type="text" required
+                        placeholder="Letters Only">
+                        <span class="error" id="err_lname"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Password:</label>
+                    </td>
+                    <td>
+                        <input class="text" id="passw" name="password" type="password" required
+                        placeholder="6+ chars & capital & number">
+                        <span class="error" id="err_passw"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Re-Enter Password:</label>
+                    </td>
+                    <td>
+                        <input class="text" id="passw2" name="password_reeneter" type="password" required
+                        placeholder="Must match Password">
+                        <span class="error" id="err_passw2"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Username:</label>
+                    </td>
+                    <td>
+                        <input class="text" id="uname" name="username" type="text" required
+                        placeholder="Starts with a Letter">
+                        <span class="error" id="err_uname"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Address:</label>
+                    </td>
+                    <td>
+                        <input class="text" id="address" name="address" type="text" required
+                        placeholder="1234 Streetname, City">
+                        <span class="error" id="err_address"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Province:</label>
+                    </td>
+                    <td>
+                        <select class="text" name="province" id="province">
+                            <option value="0">Select a Province:</option>
+                            <option value="AB">Alberta</option>
+                            <option value="BC">British Columbia</option>
+                            <option value="MB">Manitoba</option>
+                            <option value="NL">Newfoundland and Labrador</option>
+                            <option value="NB">New Brunswick</option>
+                            <option value="NT">Northwest Territories</option>
+                            <option value="NS">Nova Scotia</option>
+                            <option value="NU">Nunavut</option>
+                            <option value="ON">Ontario</option>
+                            <option value="PE">Prince Edward Island</option>
+                            <option value="QC">Quebec</option>
+                            <option value="SK">Saskatchewan</option>
+                            <option value="YT">Yukon</option>
+                        </select>
+                        <span class="error" id="err_province"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Gender:</label>
+                    </td>
+                    <td>
+                        <label class="radio">Male</label>
+                        <input id="male" name="gender" type="radio" value="Male">
+                        <label class="radio">Female</label>
+                        <input id="female" name="gender" type="radio" value="Female">
+                        <label class="radio">Prefer not to Share</label>
+                        <input id="other" name="gender" type="radio" value="Other">
+                        <span class="error" id="err_gender"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Email:</label>
+                    </td>
+                    <td>
+                        <input class="text" id="email" name="email" type="email" required
+                        placeholder="example@client.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Age:</label>
+                    </td>
+                    <td>
+                        <input class="text" id="age" name="age" type="text" required
+                        placeholder="18-80">
+                        <span class="error" id="err_age"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="reset" type="reset">Reset</button>
+                    </td>
+                    <td>
+                        <button id="submit" type="submit">Submit</button>
+                    </td>
+                </tr>
+            </table>
+            <div class="review">
+                <label><span id="label">Leave a Review:</span></label>
+                <textarea id="review" name="review"></textarea>
+                <span class="error" id="err_review"></span>
+                <p> Tell me what you think I should bring to the Store. <br>
+                    Or let me know what you think about my site! <br>
+                     No longer than 160 characters! </p>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <span>&copy;Omar Hussein</span>
+    </footer>
+</body>
+
+</html>

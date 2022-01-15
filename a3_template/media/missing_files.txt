@@ -1,0 +1,1 @@
+This driectory contains any images, audio or video to be included in the html

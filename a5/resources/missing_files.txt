@@ -1,0 +1,1 @@
+This driectory contains any images to be included in the html
